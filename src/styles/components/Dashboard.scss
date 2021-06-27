@@ -1,0 +1,88 @@
+.Dashboard{
+  align-self: auto;
+}
+.intro{
+  position: absolute;
+  background-color: #282c34;
+  width: 100%;
+  height: 40%;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  h1{
+    padding-top: 30px;
+    color: #61dafb;
+    font-size: 45px;
+  }
+  p{
+    padding-top: 30px;
+    color: white;
+    font-size: 24px;
+  }
+}
+
+.Links{
+  position: relative;
+  top : 30%;
+  padding: 0 8px 0 8px;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav-link1{
+  position: relative;
+  left: -2%;
+  border: hidden;
+  text-decoration: none;
+  color: #282c34;
+  background-color: #61dafb;
+  padding: 15px 45px 15px 45px;
+  font-size: 20px;
+  &:hover{
+    transition: 0.8s;
+    background-color: white;
+  }
+}
+
+.nav-link2{
+  color: #61dafb;
+  text-decoration: none;
+  font-size: 20px;
+  -webkit-box-direction : normal;
+  &:hover{
+    transition: 0.8s;
+    color: white;
+  }
+}
+.box-content{
+  position: absolute;
+  top:50%;
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+}
+.boxer{
+  display: flex;
+  border: none;
+  border-bottom: 2px solid #ececec;
+  justify-content: space-between;
+}
+
+.Cont{
+  padding-top: 20px;
+  padding-bottom: 80px;
+  text-decoration: none;
+  h2{
+    font-size: 32px;
+  }
+  p{
+    padding-top: 20px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+}
+
+.docs{
+  text-decoration: none;
+  
+}

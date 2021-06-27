@@ -1,0 +1,39 @@
+.navbar {
+  background-color: #272727;
+  display: flex;
+  width: 120%;
+  height: 4rem;
+}
+.nav-logo {
+  position: absolute;
+  margin-top: 20px;
+  left: 10%;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #6457a6;
+}
+
+.nav-menu {
+  position: absolute;
+  width: 20%;
+  margin-right: 3rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  list-style-type: none;
+  left: 70%;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fef9ef;
+  font-size: 18px;
+  &:hover {
+    color: #61dafb;
+  }
+  &.isActive {
+    text-decoration: underline #61dafb;
+    color: #61dafb;
+  }
+}
