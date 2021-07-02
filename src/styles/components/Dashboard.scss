@@ -5,19 +5,20 @@
   position: absolute;
   background-color: #282c34;
   width: 100%;
-  height: 40%;
+  height: 60%;
   display: block;
   text-align: center;
   justify-content: center;
   h1{
-    padding-top: 30px;
+    margin-top: 180px;
     color: #61dafb;
-    font-size: 45px;
+    font-size: 60px;
+    font-weight: 700;
   }
   p{
     padding-top: 30px;
     color: white;
-    font-size: 24px;
+    font-size: 32px;
   }
 }
 
@@ -56,7 +57,7 @@
 }
 .box-content{
   position: absolute;
-  top:50%;
+  top:70%;
   width: 80%;
   height: auto;
   margin-left: 10%;
@@ -71,6 +72,9 @@
 .Cont{
   padding-top: 20px;
   padding-bottom: 80px;
+  border: none;
+  border-left: 1px hidden;
+  padding-left: 20px;
   text-decoration: none;
   h2{
     font-size: 32px;
@@ -85,4 +89,46 @@
 .docs{
   text-decoration: none;
   
+}
+
+.devs{
+  padding-top: 90px;
+  h1{
+    text-align: center;
+    padding-bottom: 40px;
+    border: none;
+    border-bottom: 2px solid #ececec ;
+  }
+
+}
+
+.picture{
+  padding-top: 20px;
+  display: flex;
+}
+.pic{
+  width: 50%;
+  border: none;
+  padding-left: 20px;
+  border-left: 2px hidden;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ececec;
+}
+
+.Contactus{
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  padding-top: 20Px;
+  padding-bottom: 20px;
+}
+.conta{
+  position: relative;
+  left: 40%;
+  text-align: center;
+  border: none;
+  padding-bottom: 2px;
+  width: 20%;
+  padding-top: 20px;
 }

@@ -1,7 +1,9 @@
 import React, { useCallback } from "react";
 import { withRouter } from "react-router";
 import { auth } from "../firebase/firebase";
+import { NavLink } from "react-router-dom";
 import NavBar from "./Navbar";
+import "../styles/components/Signup.scss";
 const SignUp = ({ history }) => {
   const submiteHandler = useCallback(
     async (event) => {
@@ -19,17 +21,32 @@ const SignUp = ({ history }) => {
   return (
     <div>
       <NavBar />
-      <h2> Sign Up </h2>
-      <form onSubmit={submiteHandler}>
-        <label>
-          Email :<input type="email" name="email" placeholder="Email"></input>
-        </label>
-        <label>
-          password
-          <input type="password" name="password" placeholder="Password"></input>
-        </label>
-        <button type="submit">Sign Up</button>
-      </form>
+      <div className="Sng">
+        <div className="Form">
+          <h2> Register </h2>
+
+          <form onSubmit={submiteHandler}>
+            <label className="innerForm">
+              Email :
+              <input type="email" name="email" placeholder="Email"></input>
+            </label>
+            <label className="innerForm">
+              Password :
+              <input
+                type="password"
+                name="password"
+                placeholder="password"
+              ></input>
+            </label>
+            <button type="submit" className="but">
+              Register
+            </button>
+            <NavLink to="/SignIn" className="link">
+              Already an account ?
+            </NavLink>
+          </form>
+        </div>
+      </div>
     </div>
   );
 };

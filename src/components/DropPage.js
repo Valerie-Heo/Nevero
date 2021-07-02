@@ -48,6 +48,40 @@ const DropPage = () => {
             </p>
           </div>
         </div>
+        <div className="devs">
+          <h1>Team</h1>
+          <div className="picture">
+            <div className="pic">
+              <img src="../images/abdouymn_2.jpg" alt=""></img>
+            </div>
+            <div className="pic">
+              <p>Abderahmane Yamani</p>
+              <p>Age : 22</p>
+              <p>Collage student</p>
+            </div>
+            <div className="pic">
+              <p>Khalidou Picture</p>
+            </div>
+            <div className="pic">
+              <p>Abderahmane Yamani</p>
+              <p>Age : 22</p>
+              <p>Collage student</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="Contactus">
+          <h1>Contact us </h1>
+          <div className="conta">
+            <p>Gmail</p>
+          </div>
+          <div className="conta">
+            <p>Twitter</p>
+          </div>
+          <div className="conta">Discord</div>
+          <div className="conta">Instagram</div>
+          <div className="conta">Twitter</div>
+        </div>
       </div>
     </div>
   );

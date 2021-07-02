@@ -1,8 +1,10 @@
 import React, { useCallback, useContext } from "react";
+import { NavLink } from "react-router-dom";
 import { Redirect, withRouter } from "react-router";
 import { AuthContext } from "../actions/auth";
 import { auth } from "../firebase/firebase";
 import NavBar from "./Navbar";
+import "../styles/components/Signin.scss";
 const SignIn = ({ history }) => {
   const handleSignUp = useCallback(
     async (event) => {
@@ -26,17 +28,28 @@ const SignIn = ({ history }) => {
   return (
     <div>
       <NavBar />
-      <form onSubmit={handleSignUp}>
-        <label>
-          Email :
-          <input name="email" type="email" placeholder="Email" />
-        </label>
-        <label>
-          Password :
-          <input name="password" type="password" placeholder="password" />
-        </label>
-        <button type="submit"> Log in !</button>
-      </form>
+      <div className="Sng">
+        <div className="Form">
+          <h2>Login</h2>
+          <form onSubmit={handleSignUp}>
+            <label className="innerForm">
+              Email :
+              <input name="email" type="email" placeholder="Email" />
+            </label>
+            <label className="innerForm">
+              Password :
+              <input name="password" type="password" placeholder="password" />
+            </label>
+            <button type="submit" className="but">
+              {" "}
+              Login
+            </button>
+            <NavLink to="/Signup" className="link2">
+              Need an account ?
+            </NavLink>
+          </form>
+        </div>
+      </div>
     </div>
   );
 };
